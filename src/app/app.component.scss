@@ -1,3 +1,9 @@
+h1{
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+}
+
 .box {
   margin: 16px 0;
   box-shadow: 0 4px 6px 0 #cdd1e0;
@@ -54,10 +60,18 @@ label {
 input {
   height: 46px;
   font-size: 15px;
-  border: 2px solid #EAEAEC;
+  border: 2px solid #eaeaec;
   border-radius: 24px;
   padding: 0 15px;
   display: inline-flex;
+}
+
+.options {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .interval {
@@ -72,6 +86,17 @@ input {
 .colors {
   display: flex;
   gap: 15px;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.download-all {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .list {
@@ -89,7 +114,7 @@ input {
   align-items: center;
   justify-content: flex-end;
   padding: 0.5rem;
-  border: 2px solid #EAEAEC;
+  border: 2px solid #eaeaec;
   border-radius: 10px;
   flex-direction: column-reverse;
   width: 100%;
@@ -99,22 +124,34 @@ input {
   transition: border 0.1s ease-in;
   position: relative;
 
+  @media screen and (max-width: 768px) {
+    width: 115px;
+  }
+
   &:hover {
     border-color: #30323b;
   }
 
   h2 {
     margin-top: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 }
 
 .act {
   width: 90px;
 
+  @media screen and (max-width: 768px) {
+    font-size: 0;
+  }
+
   & ::ng-deep {
     svg {
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
     }
 
     a {
@@ -123,6 +160,10 @@ input {
       color: #30323b;
       opacity: 0;
       transition: opacity 0.1s ease-in;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0;
+      }
 
       &:hover {
         opacity: 1;
@@ -136,7 +177,7 @@ input {
   height: 46px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #EAEAEC;
+  border: 2px solid #eaeaec;
   display: inline-block;
 
   input {

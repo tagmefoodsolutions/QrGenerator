@@ -4,12 +4,16 @@ body {
 	margin: 0;
 	padding: 0;
 
-	height: 100vh;
+	min-height: 100vh;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 body {
 	background-color: #f7f7f7;
 	color: #30323b;
-  padding: 0 30px;
+  padding: 0 30px 30px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+  }
 }

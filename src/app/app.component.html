@@ -5,7 +5,7 @@
     <label for="text">Url</label>
     <div><input type="text" class="w-100" id="text" placeholder="Enter text" [(ngModel)]="url"></div>
 
-    <div class="d-flex">
+    <div class="options">
       <div class="interval">
         <label for="start">Intervalo de mesa</label>
         <div>
@@ -34,7 +34,7 @@
   </div>
 
   <div class="box">
-    <button class="btn primary" (click)="downloadAsZip()">
+    <button class="btn primary download-all" (click)="downloadAsZip()">
       <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 575.7 575.7" xml:space="preserve"><style>.st0{fill:#231f20}</style><path class="st0" d="M411 200.8h-43c-4.4 0-8 3.6-8 8s3.6 8 8 8h43c6.6 0 12.3 4.9 12.3 11.5v217.6c0 7.4-6.4 13.9-13.7 13.9H165.4c-7.4 0-13.1-6.5-13.1-13.9v-219a9.9 9.9 0 0 1 10.3-10.1H206c4.4 0 8-3.6 8-8s-3.6-8-8-8h-42c-15.5 0-27.7 12-27.7 27.5v219a28.1 28.1 0 0 0 27.7 28.5h247c15.5 0 28.3-13 28.3-28.5v-219a27.9 27.9 0 0 0-28.3-27.5z"/><path class="st0" d="m383.9 284.8-88.3 88.3V107.8c0-4.4-3.6-8-8-8s-8 3.6-8 8v265.3l-88.4-88.3a8.1 8.1 0 0 0-11.4 0 8 8 0 0 0 0 11.3l101.4 101.4a8 8 0 0 0 6 2.3h.6c2.1.1 4.3-.7 6-2.3l101.4-101.4a7.8 7.8 0 0 0 2.3-5.7c0-2-.8-4.1-2.3-5.7a8 8 0 0 0-11.3.1z"/></svg>
       Baixar tudo
     </button>

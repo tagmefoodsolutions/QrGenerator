@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   title = 'qrs';
 
   color = '#333333';
-  bgColor = '#ffffff';
+  bgColor = '#FFFFFF';
 
   constructor(private domSanitizer: DomSanitizer) { }
 
