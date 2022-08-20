@@ -1,0 +1,152 @@
+.box {
+  margin: 16px 0;
+  box-shadow: 0 4px 6px 0 #cdd1e0;
+  border-radius: 8px;
+  padding: 15px;
+  background: #fff;
+}
+
+.w-100 {
+  width: calc(100% - 32px);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+  height: 46px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #f7f7f7;
+  color: #30323b;
+
+  &.primary {
+    background: #fd7f3e;
+    color: #fff;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin: -5px 5px 0 0;
+  }
+  .st0 {
+    fill: #fff;
+  }
+}
+
+label {
+  font-weight: 600;
+  display: inline-flex;
+  padding: 15px 0;
+}
+
+input {
+  height: 46px;
+  font-size: 15px;
+  border: 2px solid #EAEAEC;
+  border-radius: 24px;
+  padding: 0 15px;
+  display: inline-flex;
+}
+
+.interval {
+  flex: 1;
+
+  input {
+    width: 100%;
+    max-width: 80px;
+  }
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+}
+
+.list {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border: 2px solid #EAEAEC;
+  border-radius: 10px;
+  flex-direction: column-reverse;
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.1s ease-in;
+  position: relative;
+
+  &:hover {
+    border-color: #30323b;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.act {
+  width: 90px;
+
+  & ::ng-deep {
+    svg {
+    width: 100%;
+    height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #30323b;
+      opacity: 0;
+      transition: opacity 0.1s ease-in;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.input-color {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #EAEAEC;
+  display: inline-block;
+
+  input {
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    margin: -8px;
+    cursor: pointer;
+  }
+}

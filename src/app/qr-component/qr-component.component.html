@@ -1,0 +1,10 @@
+<qrcode
+  (qrCodeURL)="onChangeURL($event)"
+  [qrdata]="qrdata"
+  [width]="600"
+  [errorCorrectionLevel]="'M'"
+  [elementType]="'svg'"
+  [colorDark]="color"
+  [colorLight]="bgColor"
+></qrcode>
+<a [href]="qrCodeDownloadLink" [download]="'mesa-' + qrdata.split('=')[1]">Baixar</a>
