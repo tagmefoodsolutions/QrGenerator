@@ -1,4 +1,4 @@
-<qrcode
+<!-- <qrcode
   (qrCodeURL)="onChangeURL($event)"
   [qrdata]="qrdata"
   [width]="600"
@@ -7,4 +7,19 @@
   [colorDark]="color"
   [colorLight]="bgColor"
 ></qrcode>
-<a [href]="qrCodeDownloadLink" [download]="'mesa-' + qrdata.split('=')[1]">Baixar</a>
+<a [href]="qrCodeDownloadLink" [download]="'mesa-' + qrdata.split('=')[1]">Baixar</a> -->
+
+<img *ngIf="blobURL" [src]="blobURL" alt="QR Code" />
+
+<ngx-qrcode-styling
+  #qrcode
+  [type]="'svg'"
+  [width]="280"
+  [height]="280"
+  [margin]="0"
+  [data]="qrdata"
+  [image]="'https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg'"
+  [frameOptions]="{style: 'style20', height: 280, width: 280, x: 60, y: 60}"
+  (click)="getQrBlob()"
+>
+</ngx-qrcode-styling>
